@@ -34,6 +34,8 @@ TICKERS=[
 ,"AMZN"
 ,"AMGN"
 ,"ADI"
+    ]
+"""
 ,"ANSS"
 ,"AAPL"
 ,"AMAT"
@@ -59,7 +61,7 @@ TICKERS=[
 ,"COST"
 ,"CSX"
     ]
-"""
+
 ,"DXCM"
 ,"DOCU"
 ,"DLTR"
@@ -131,7 +133,7 @@ TICKERS=[
 ,"ZM"
 ]
 """
-MODEL_ROW_TICKS = 5
+MODEL_ROW_TICKS = 14
 
 def update_stocks( save_path, tickers ):
     for t in tickers:
