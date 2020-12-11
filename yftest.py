@@ -140,10 +140,10 @@ def update_stocks( save_path, tickers ):
         #stock_data = yf.Ticker(t)
         #hist = stock_data.history(period="max", interval="1h")
 
-        if not os.path.isfile("%s/%s.csv" % (save_path, t)):
+        if True or not os.path.isfile("%s/%s.csv" % (save_path, t)):
             hist = yf.download(t,
                         start='2019-01-01',
-                        end='2020-10-13',
+                        end='2020-12-12',
                         progress=True,
                         interval="1h")
 
@@ -311,6 +311,7 @@ def get_response_of(hist):
 
 
     y= np.array(response_data)
+    print (y.shape)
 
     return y
 
